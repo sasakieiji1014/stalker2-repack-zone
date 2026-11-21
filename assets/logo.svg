@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <clipPath id="squareClip">
+      <rect x="8" y="8" width="240" height="240"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#squareClip)">
+    <!-- Background: worn square -->
+    <rect x="8" y="8" width="240" height="240" fill="#1a1712"/>
+    <!-- Corroded metal texture patches -->
+    <path d="M8 8 L120 8 L100 40 L60 60 L8 70 Z" fill="#8a3b1e" opacity="0.35"/>
+    <path d="M248 8 L248 80 L200 70 L180 30 L190 8 Z" fill="#6f8f4a" opacity="0.18"/>
+    <path d="M8 248 L8 190 L50 200 L90 230 L110 248 Z" fill="#c9b48a" opacity="0.12"/>
+    <path d="M248 248 L160 248 L180 210 L230 200 L248 220 Z" fill="#8a3b1e" opacity="0.28"/>
+    <!-- Scratch/weathering lines -->
+    <path d="M30 100 L45 105 M200 150 L215 148 M60 200 L70 210 M180 60 L190 55" stroke="#c9b48a" stroke-width="1.2" opacity="0.25"/>
+
+    <!-- Radiation trefoil (upper right, rotated slightly) -->
+    <g transform="translate(172,84) rotate(18)">
+      <!-- Trefoil blades -->
+      <path d="M0,-38 A38,38 0 0 1 32.9,19 L13,7.5 A14,14 0 0 0 0,-14 Z" fill="#c9b48a"/>
+      <path d="M32.9,19 A38,38 0 0 1 -32.9,19 L-13,7.5 A14,14 0 0 0 13,7.5 Z" fill="#c9b48a"/>
+      <path d="M-32.9,19 A38,38 0 0 1 0,-38 L0,-14 A14,14 0 0 0 -13,7.5 Z" fill="#c9b48a"/>
+      <!-- Center hub -->
+      <circle cx="0" cy="0" r="7" fill="#1a1712"/>
+      <circle cx="0" cy="0" r="3.5" fill="#c9b48a"/>
+    </g>
+
+    <!-- Cracked gas mask filter (center/lower-left, fused with trefoil) -->
+    <g transform="translate(108,146) rotate(-12)">
+      <!-- Filter outer body - angular, industrial -->
+      <path d="M-46,-34 L-20,-46 L20,-46 L46,-34 L52,-6 L44,32 L20,46 L-20,46 L-44,32 L-52,-6 Z" fill="#8a3b1e"/>
+      <!-- Filter mid ring -->
+      <path d="M-36,-26 L-16,-36 L16,-36 L36,-26 L40,-4 L34,24 L16,36 L-16,36 L-34,24 L-40,-4 Z" fill="#1a1712"/>
+      <!-- Filter inner plate -->
+      <path d="M-26,-18 L-10,-26 L10,-26 L26,-18 L29,-2 L24,16 L10,26 L-10,26 L-24,16 L-29,-2 Z" fill="#6f8f4a" opacity="0.85"/>
+      <!-- Filter perforation holes (stencil style) -->
+      <circle cx="-12" cy="-8" r="2.4" fill="#1a1712"/>
+      <circle cx="0" cy="-12" r="2.4" fill="#1a1712"/>
+      <circle cx="12" cy="-8" r="2.4" fill="#1a1712"/>
+      <circle cx="-14" cy="4" r="2.4" fill="#1a1712"/>
+      <circle cx="0" cy="0" r="2.4" fill="#1a1712"/>
+      <circle cx="14" cy="4" r="2.4" fill="#1a1712"/>
+      <circle cx="-8" cy="14" r="2.4" fill="#1a1712"/>
+      <circle cx="8" cy="14" r="2.4" fill="#1a1712"/>
+      <!-- Central trefoil hub fused into filter -->
+      <circle cx="0" cy="0" r="4.5" fill="#c9b48a"/>
+      <circle cx="0" cy="0" r="2" fill="#1a1712"/>
+      <!-- Filter thread notches -->
+      <path d="M-46,-34 L-52,-40 M46,-34 L52,-40 M-44,32 L-52,40 M44,32 L52,40" stroke="#1a1712" stroke-width="3" stroke-linecap="square"/>
+    </g>
+
+    <!-- Cracks radiating through filter and trefoil -->
+    <path d="M108,146 L82,118 L74,96 L80,82" stroke="#1a1712" stroke-width="2.5" fill="none" stroke-linejoin="miter"/>
+    <path d="M108,146 L120,118 L132,104" stroke="#1a1712" stroke-width="2" fill="none"/>
+    <path d="M108,146 L96,168 L88,190 L92,206" stroke="#1a1712" stroke-width="2.5" fill="none"/>
+    <path d="M108,146 L134,162 L148,180" stroke="#1a1712" stroke-width="2" fill="none"/>
+    <path d="M120,118 L140,108 L158,112" stroke="#1a1712" stroke-width="1.8" fill="none"/>
+    <path d="M96,168 L74,174 L64,188" stroke="#1a1712" stroke-width="1.8" fill="none"/>
+
+    <!-- Rusted burial line / half-buried debris -->
+    <path d="M20,196 Q60,180 108,192 Q156,204 200,188 L220,196 L228,210 L200,220 Q150,232 100,222 Q60,214 30,224 Z" fill="#8a3b1e" opacity="0.55"/>
+    <path d="M20,196 Q60,180 108,192 Q156,204 200,188" stroke="#c9b48a" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <!-- Debris chunks -->
+    <polygon points="44,208 56,204 60,214 48,218" fill="#1a1712"/>
+    <polygon points="170,204 182,200 186,212 174,216" fill="#1a1712"/>
+    <polygon points="120,216 130,212 134,220 124,224" fill="#6f8f4a" opacity="0.6"/>
+
+    <!-- Stencil-style industrial markings -->
+    <path d="M30,40 L50,40 M40,30 L40,50" stroke="#c9b48a" stroke-width="2" opacity="0.4"/>
+    <path d="M210,40 L226,40 M218,34 L218,46" stroke="#c9b48a" stroke-width="2" opacity="0.4"/>
+    <path d="M30,220 L30,232 M24,226 L36,226" stroke="#c9b48a" stroke-width="1.8" opacity="0.35"/>
+    <path d="M226,220 L226,232 M220,226 L232,226" stroke="#c9b48a" stroke-width="1.8" opacity="0.35"/>
+
+    <!-- Small wordmark stencil -->
+    <text x="128" y="244" font-family="monospace" font-size="9" fill="#c9b48a" text-anchor="middle" letter-spacing="3" opacity="0.65">STALKER2-REPACK-ZONE</text>
+
+    <!-- Gritty border -->
+    <rect x="8" y="8" width="240" height="240" fill="none" stroke="#c9b48a" stroke-width="2" opacity="0.5"/>
+    <path d="M8,30 L8,8 L30,8 M226,8 L248,8 L248,30 M248,226 L248,248 L226,248 M30,248 L8,248 L8,226" stroke="#c9b48a" stroke-width="3" fill="none"/>
+  </g>
+</svg>
